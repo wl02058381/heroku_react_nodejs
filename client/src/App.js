@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import axios from 'axios'
 
@@ -15,7 +14,7 @@ function App() {
     user && (
     <div className="App">
       <header className="App-header">
-        <img src={user.user.avatar_url} className="App-logo" alt="logo" />
+        <img src={user.user.avatar_url}  />
         <p>
          {user.user.login}
         </p>
