@@ -5,16 +5,17 @@ import axios from 'axios'
 function App() {
   const [user,setUser] = React.useState(null)
   React.useEffect(() => {
-    axios.get('/api?user=TheBearER')
+    axios.get('/api?user=wl02058381') //輸入github用戶名
     .then(response => {
         setUser(response.data)
     });
   }, []);
+  //user.user.avatar_url取得github用戶頭像
   return (
     user && (
     <div className="App">
       <header className="App-header">
-        <img src={user.user.avatar_url}  />
+        <img src={user.user.avatar_url}/>
         <p>
          {user.user.login}
         </p>

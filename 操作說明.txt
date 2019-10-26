@@ -1,0 +1,7 @@
+每次版本更新後：
+1.git add .
+2.git commit -m "看你想註解什麼"
+3.git push heroku master
+
+網站會在https://react-node-app1.herokuapp.com
+API:https://react-node-app1.herokuapp.com/api
